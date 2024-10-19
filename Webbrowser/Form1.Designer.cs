@@ -41,12 +41,19 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
@@ -63,9 +70,9 @@
             this.textBox1.BackColor = System.Drawing.Color.Gray;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(58, 28);
+            this.textBox1.Location = new System.Drawing.Point(200, 28);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(600, 15);
+            this.textBox1.Size = new System.Drawing.Size(400, 15);
             this.textBox1.TabIndex = 3;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -111,6 +118,9 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(4, 900);
             this.panel2.TabIndex = 1;
+            this.panel2.Tag = "ld";
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.res);
+            this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.r);
             // 
             // panel3
             // 
@@ -121,6 +131,9 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(4, 900);
             this.panel3.TabIndex = 2;
+            this.panel3.Tag = "pde";
+            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.res);
+            this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.r);
             // 
             // panel4
             // 
@@ -130,6 +143,9 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(800, 4);
             this.panel4.TabIndex = 3;
+            this.panel4.Tag = "dd";
+            this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.res);
+            this.panel4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.r);
             // 
             // panel5
             // 
@@ -139,6 +155,9 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(800, 4);
             this.panel5.TabIndex = 4;
+            this.panel5.Tag = "vd";
+            this.panel5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.res);
+            this.panel5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.r);
             // 
             // panel6
             // 
@@ -148,6 +167,9 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(4, 4);
             this.panel6.TabIndex = 5;
+            this.panel6.Tag = "lv";
+            this.panel6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.res);
+            this.panel6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.r);
             // 
             // panel7
             // 
@@ -157,6 +179,9 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(4, 4);
             this.panel7.TabIndex = 6;
+            this.panel7.Tag = "pv";
+            this.panel7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.res);
+            this.panel7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.r);
             // 
             // panel8
             // 
@@ -166,6 +191,9 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(4, 4);
             this.panel8.TabIndex = 7;
+            this.panel8.Tag = "lde";
+            this.panel8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.res);
+            this.panel8.MouseUp += new System.Windows.Forms.MouseEventHandler(this.r);
             // 
             // panel9
             // 
@@ -175,12 +203,54 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(4, 4);
             this.panel9.TabIndex = 8;
+            this.panel9.Tag = "pd";
+            this.panel9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.res);
+            this.panel9.MouseUp += new System.Windows.Forms.MouseEventHandler(this.r);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel10.Location = new System.Drawing.Point(4, 50);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(792, 846);
+            this.panel10.TabIndex = 9;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(39, 22);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(29, 29);
+            this.button4.TabIndex = 4;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(4, 22);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(29, 29);
+            this.button5.TabIndex = 5;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(74, 22);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(29, 29);
+            this.button6.TabIndex = 6;
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 900);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -192,6 +262,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.Tag = "dd";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -214,6 +285,10 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button6;
     }
 }
 
