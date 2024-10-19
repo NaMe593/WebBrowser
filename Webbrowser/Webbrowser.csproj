@@ -104,6 +104,9 @@
   <ItemGroup>
     <None Include="Resources\qwe3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa5401fcdefb7fdeb04e4ac11b8eaac5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

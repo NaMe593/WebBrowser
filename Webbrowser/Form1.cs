@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CefSharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,8 @@ namespace Webbrowser
             button4.BackgroundImage = Resources.qwe1;
             button5.BackgroundImage = Resources.qwe;
             button6.BackgroundImage = Resources.qwe2;
+            button7.BackgroundImage = Resources.aa5401fcdefb7fdeb04e4ac11b8eaac5;
+            chromiumWebBrowser1.LoadUrl("google.com");
         }
         private async void move()
         {
@@ -144,7 +147,7 @@ namespace Webbrowser
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            chromiumWebBrowser1.LoadUrl(textBox1.Text);
         }
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)
@@ -262,7 +265,29 @@ namespace Webbrowser
                     }
                 }
             });
-        }private async void resizembbbbb(bool i)
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.LoadUrl("google.com");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.Back();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.Refresh();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.Forward();
+        }
+
+        private async void resizembbbbb(bool i)
         {
             await Task.Run(() =>
             {

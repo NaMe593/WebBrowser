@@ -63,6 +63,16 @@ namespace Webbrowser.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aa5401fcdefb7fdeb04e4ac11b8eaac5 {
+            get {
+                object obj = ResourceManager.GetObject("aa5401fcdefb7fdeb04e4ac11b8eaac5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap qwe {
             get {
                 object obj = ResourceManager.GetObject("qwe", resourceCulture);
